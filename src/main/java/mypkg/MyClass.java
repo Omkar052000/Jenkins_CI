@@ -18,6 +18,7 @@ public class MyClass {
 	{
 		System.out.println("Hello GFG");
 		System.out.println("Welcome to Jenkins Pipeline");
+		System.out.println("Welcome to Jenkins Pipeline2");
 	}
 	public static void main(String[] args) {
 		MyClass ob = new MyClass();
