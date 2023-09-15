@@ -5,37 +5,44 @@ pipeline {
 	}
 	
 	stages{
-		stage('Welcome Stage')
-		{
-			steps
+			stage('Welcome Stage')
 			{
-				echo 'Welcome to Jenkins Pipeline'
+			steps
+				{
+					echo 'Welcome to Jenkins Pipeline'
+				}
+		  	}
+		  	
+			stage('Maven Clean')
+			{
+				steps
+				{
+					bat 'mvn clean'
+				}
 			}
-		}
-		stage('Maven Clean')
-		{
-			steps
+			
+			stage('Maven Package')
 			{
-				bat 'mvn clean'
+				steps
+				{
+					bat 'mvn package'
+				}
 			}
-		stage('Maven Package')
-		{
-			steps
+			
+			stage('Maven Install')
 			{
-				bat 'mvn package'
+				steps
+				{
+					bat 'mvn install'
+				}
 			}
-		}
-		stage('Maven Install')
-		{
-			steps
+			
+			stage('Final Build Step')
 			{
-				bat 'mvn install'
-			}
-		stage('Final Build Step')
-		{
-			steps
-			{
-				echo 'Build Done'
+				steps
+				{
+					echo 'Build Done'
+				}
 			}
 		}
 	}
