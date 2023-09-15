@@ -36,6 +36,14 @@ pipeline {
 					bat 'mvn install'
 				}
 			}
+
+			stage('Maven test')
+			{
+				steps
+				{
+					bat 'mvn test'
+				}
+			}
 			
 			stage('Final Build Step')
 			{
