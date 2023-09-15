@@ -10,9 +10,13 @@ public class MyClass {
 	{
 		return (s * s);
 	}
-	public float areaTriangle(float r)
+	public float areaCircle(float r)
 	{
 		return (float) (3.14 * r * r);
+	}
+	public void show()
+	{
+		System.out.println("Hello GFG");
 	}
 	public static void main(String[] args) {
 		MyClass ob = new MyClass();
