@@ -17,10 +17,7 @@ public class MyClass {
 	public void show()
 	{
 		System.out.println("Hello GFG");
-		System.out.println("Welcome to Jenkins Pipeline");
-		System.out.println("Welcome to Jenkins Pipeline2");
-		System.out.println("Welcome to Jenkins Pipeline3");
-		System.out.println("Welcome to Jenkins Pipeline4");
+		System.out.println("Welcome to Jenkins Pipeline, This is DevOps Class");
 	}
 	public static void main(String[] args) {
 		MyClass ob = new MyClass();
