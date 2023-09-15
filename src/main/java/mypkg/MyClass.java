@@ -20,6 +20,7 @@ public class MyClass {
 		System.out.println("Welcome to Jenkins Pipeline");
 		System.out.println("Welcome to Jenkins Pipeline2");
 		System.out.println("Welcome to Jenkins Pipeline3");
+		System.out.println("Welcome to Jenkins Pipeline4");
 	}
 	public static void main(String[] args) {
 		MyClass ob = new MyClass();
